@@ -11,9 +11,9 @@ Scenario: Invalid User
 	Then System should show a message saying "Invalid User"
 
 Scenario: Invalid Modification
-	Given User enters Destination "Indira Nagar" Source "Domlur" StartTime "17:30" EndTime "18:30"
+	Given User enters Destination "Indira Nagar" Source "Domlur" StartTime "as" EndTime "18:30"
 	When User clicks "Submit"
-	Then System should show a message saying "StartTime cannot be blank"
+	Then System should show a message saying "StartTime invalid"
 	
 Scenario: Invalid Modification
 	Given User enters Destination "" Source "Domlur" StartTime "17:30" EndTime "18:30"
